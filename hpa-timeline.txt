@@ -1,0 +1,344 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261019225459
+Username: DESKTOP-S5BLK3I\DELL
+RunAs User: DESKTOP-S5BLK3I\DELL
+Configuration Name: 
+Machine: DESKTOP-S5BLK3I (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 18608
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\hpa-timeline.txt
+2026-10-19 22:54:59
+Error from server (NotFound): namespaces "usermgmt-02230130" not found
+Error from server (NotFound): namespaces "usermgmt-02230130" not found
+2026-10-19 22:55:30
+Error from server (NotFound): namespaces "usermgmt-02230130" not found
+Error from server (NotFound): namespaces "usermgmt-02230130" not found
+2026-10-19 22:56:01
+Error from server (NotFound): namespaces "usermgmt-02230130" not found
+Error from server (NotFound): namespaces "usermgmt-02230130" not found
+2026-10-19 22:56:33
+
+
+2026-10-19 22:57:03
+
+
+2026-10-19 22:57:34
+
+
+2026-10-19 22:58:04
+
+
+2026-10-19 22:58:35
+
+
+2026-10-19 22:59:06
+
+
+2026-10-19 22:59:36
+
+
+2026-10-19 23:00:06
+
+
+2026-10-19 23:00:36
+
+
+2026-10-19 23:01:07
+
+
+2026-10-19 23:01:37
+
+
+2026-10-19 23:02:08
+
+
+2026-10-19 23:02:38
+
+
+2026-10-19 23:03:08
+
+
+2026-10-19 23:03:39
+
+
+2026-10-19 23:04:09
+
+
+2026-10-19 23:04:39
+
+
+2026-10-19 23:05:10
+
+
+2026-10-19 23:05:40
+
+
+2026-10-19 23:06:10
+
+
+2026-10-19 23:06:49
+
+
+2026-10-19 23:07:20
+
+
+2026-10-19 23:07:51
+
+
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\ITM403\Assignment> clear
+PS D:\ITM403\Assignment> Start-Transcript -Path .\hpa-timeline.txt -Append
+while ($true) {
+  Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+  kubectl get hpa api -n usermgmt-02230130
+  kubectl get deployment api -n usermgmt-02230130
+  Start-Sleep -Seconds 30
+}
+Stop-Transcript
+Transcript started, output file is .\hpa-timeline.txt
+2026-10-19 23:08:11
+NAME   REFERENCE        TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+api    Deployment/api   cpu: <unknown>/50%   2         6         2          80m
+NAME   READY   UP-TO-DATE   AVAILABLE   AGE
+api    2/2     2            2           128m
+2026-10-19 23:08:41
+NAME   REFERENCE        TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+api    Deployment/api   cpu: <unknown>/50%   2         6         2          80m
+api    2/2     2            2           128m
+2026-10-19 23:09:12
+
+
+2026-10-19 23:09:43
+
+
+2026-10-19 23:10:14
+
+
+2026-10-19 23:10:50
+
+
+2026-10-19 23:11:25
+
+
+2026-10-19 23:11:55
+
+
+2026-10-19 23:12:25
+
+
+2026-10-19 23:12:56
+
+
+2026-10-19 23:13:26
+
+
+2026-10-19 23:13:57
+
+
+2026-10-19 23:14:27
+
+
+2026-10-19 23:14:57
+
+
+2026-10-19 23:15:28
+
+
+2026-10-19 23:15:58
+
+
+2026-10-19 23:16:29
+
+
+2026-10-19 23:16:59
+
+
+2026-10-19 23:17:30
+
+
+2026-10-19 23:18:01
+
+
+2026-10-19 23:18:32
+
+
+2026-10-19 23:19:03
+
+
+2026-10-19 23:19:33
+
+
+2026-10-19 23:20:03
+
+
+2026-10-19 23:20:34
+
+
+2026-10-19 23:21:04
+
+
+2026-10-19 23:21:35
+
+
+2026-10-19 23:22:06
+
+
+2026-10-19 23:22:36
+
+
+2026-10-19 23:23:08
+
+
+2026-10-19 23:23:38
+
+
+2026-10-19 23:24:09
+
+
+2026-10-19 23:24:39
+
+
+2026-10-19 23:25:10
+
+
+2026-10-19 23:25:40
+
+
+2026-10-19 23:26:11
+
+
+2026-10-19 23:26:41
+
+
+2026-10-19 23:27:12
+
+
+2026-10-19 23:27:42
+
+
+2026-10-19 23:28:13
+
+
+2026-10-19 23:28:44
+
+
+2026-10-19 23:29:14
+
+
+2026-10-19 23:29:45
+
+
+2026-10-19 23:30:15
+
+
+2026-10-19 23:30:46
+
+
+2026-10-19 23:31:16
+
+
+2026-10-19 23:31:46
+
+
+2026-10-19 23:32:17
+
+
+2026-10-19 23:32:47
+
+
+2026-10-19 23:33:18
+
+
+2026-10-19 23:33:48
+
+
+2026-10-19 23:34:19
+
+
+2026-10-19 23:34:49
+
+
+2026-10-19 23:35:20
+
+
+2026-10-19 23:35:51
+
+
+2026-10-19 23:36:22
+
+
+2026-10-19 23:36:52
+
+
+2026-10-19 23:37:23
+
+
+2026-10-19 23:37:53
+
+
+2026-10-19 23:38:23
+
+
+2026-10-19 23:38:54
+
+
+2026-10-19 23:39:24
+
+
+2026-10-19 23:39:55
+
+
+2026-10-19 23:40:25
+
+
+2026-10-19 23:40:56
+
+
+2026-10-19 23:41:26
+
+
+2026-10-19 23:41:56
+
+
+2026-10-19 23:42:27
+
+
+2026-10-19 23:42:57
+
+
+2026-10-19 23:43:28
+
+
+2026-10-19 23:43:58
+
+
+PS D:\ITM403\Assignment> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\ITM403\Assignment> Start-Transcript -Path .\hpa-timeline.txt -Append
+while ($true) {
+  Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
+  kubectl get hpa api -n usermgmt-02230130
+  kubectl get deployment api -n usermgmt-02230130
+  kubectl get pods -n usermgmt-02230130 -l app=api
+  Start-Sleep -Seconds 30
+}
+Transcript started, output file is .\hpa-timeline.txt
+2026-10-19 23:45:27
+
+
+
+PS D:\ITM403\Assignment> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS D:\ITM403\Assignment> Stop-Transcript
+Transcript stopped, output file is D:\ITM403\Assignment\hpa-timeline.txt

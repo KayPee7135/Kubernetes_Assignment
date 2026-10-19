@@ -1,0 +1,4 @@
+k8s/02-db-secret.yaml
+__pycache__/
+*.pyc
+.venv/
